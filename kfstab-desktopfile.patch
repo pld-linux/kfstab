@@ -1,0 +1,26 @@
+diff -urN kfstab/kfstab/kfstab.desktop kfstab.new/kfstab/kfstab.desktop
+--- kfstab/kfstab/kfstab.desktop	2002-06-03 00:04:48.000000000 +0200
++++ kfstab.new/kfstab/kfstab.desktop	2005-02-20 11:50:32.501696760 +0100
+@@ -1,12 +1,12 @@
+-# KDE Config File  
+ [Desktop Entry]
+-Type=System
+-Exec=kfstab -caption "%c" %i %m  
++Encoding=UTF-8
++Name=Kfstab
++Name[pl]=Kfstab
++Comment=Program for modifying file /etc/fstab
++Comment[pl]=Program do modyfikacji pliku /etc/fstab
+ Icon=kfstab.png
+-MiniIcon=kfstab.png
+-DocPath=kfstab/index.html
+-Comment=
+-Comment[de]=
++Exec=kfstab -caption "%c" %i %m
+ Terminal=0
+-Name=Kfstab
+-Name[de]=Kfstab
++Type=Application
++Categories=Qt;KDE;System;
++# vi: encoding=utf-8
+\ Brak znaku nowej linii na koñcu pliku
