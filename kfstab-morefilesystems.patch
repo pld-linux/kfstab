@@ -1,0 +1,26 @@
+diff -Naur kfstab/kfstab/editmask.cpp kfstab2/kfstab/editmask.cpp
+--- kfstab/kfstab/editmask.cpp	Sun Jun  2 22:04:49 2002
++++ kfstab2/kfstab/editmask.cpp	Fri Mar 12 13:55:27 2004
+@@ -91,6 +91,7 @@
+   insertItem( "efs" );
+   insertItem( "ext" );
+   insertItem( "ext2" );
++  insertItem( "ext3" );	// added by Pawe³ ¯uk
+   insertItem( "gmx4" );
+   insertItem( "hfs" );
+   insertItem( "hpfs" );
+@@ -110,12 +111,13 @@
+   insertItem( "sysv" ); // also for xenix & coherent
+   insertItem( "udf" );
+   insertItem( "ufs");
+-  insertItem( "umsdos" );
++  insertItem( "umsdos" ); 
+   insertItem( "vfat" );
+   insertItem( "xenix" ); // to be removed in the future
+   insertItem( "xfs");
+   insertItem( "xiafs");
+   setAutoCompletion( true );
++  setEditable( true );	// for new filesystems
+ }
+ 
+ //---------------------------------------------------------------------
