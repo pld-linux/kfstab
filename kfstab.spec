@@ -1,4 +1,4 @@
-Summary:	A program for easy modyfing file /etc/fstab
+Summary:	A program for easy modifying file /etc/fstab
 Summary(pl):	Program do ³atwej modyfikacji pliku /etc/fstab
 Name:		kfstab
 Version:	0.7.0
@@ -16,9 +16,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define	_prefix	/usr/X11R6
 
 %description
-A program for easy modyfing /etc/fstab.
+A program for easy modifying /etc/fstab .
+
 %description -l pl
-Program do modyfikacji pliku /etc/fstab
+Program do ³atwej modyfikacji pliku /etc/fstab .
+
 %prep
 %setup -q -n %{name} 
 %patch -p1
