@@ -6,7 +6,7 @@ Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Vendor:		Andreas Reuter <Andreas.Reuter@andreas-reuter.de>
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tgz
+Source0:	http://dl.sourceforge.net/kfstab/%{name}-%{version}.tgz
 # Source0-md5:	558ecd04b0924df30fd822192422e030
 Patch0:		%{name}-morefilesystems.patch
 Patch1:		%{name}-desktopfile.patch
@@ -15,7 +15,6 @@ BuildRequires:	gettext-devel
 BuildRequires:	kdelibs-devel >= 3.0.0
 Requires:	kdelibs >= 3.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-%define		_prefix /usr
 
 %description
 A program for easy modifying /etc/fstab .
