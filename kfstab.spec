@@ -24,6 +24,7 @@ Program do ³atwej modyfikacji pliku /etc/fstab .
 %prep
 %setup -q -n %{name} 
 %patch -p1
+
 %build
 %configure
 %{__make}
@@ -39,9 +40,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+# XXX: problably needs path override and find_lang --with kde
 %doc %{_datadir}/doc/*
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/applnk/*
+# XXX: move to desktopdir
+#%{_datadir}/applnk/*
 %{_datadir}/apps/*
-%{_datadir}/icons/*
-#{_datadir}/locale/*	# nothing there
+%{_iconsdir}/*/*/*/*
