@@ -58,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_desktopdir}/*
-%{_iconsdir}/hicolor/*/*/*
+%{_iconsdir}/locolor/*/*/*.png
