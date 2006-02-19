@@ -47,6 +47,8 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 mv -f $RPM_BUILD_ROOT%{_datadir}/applnk/System/%{name}.desktop \
 	$RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
+mv -f $RPM_BUILD_ROOT%{_iconsdir}/{lo,hi}color
+
 %find_lang %{name} --with-kde
 
 %clean
@@ -58,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_desktopdir}/*
-%{_iconsdir}/locolor/*/*/*.png
+%{_iconsdir}/hicolor/*/*/*.png
