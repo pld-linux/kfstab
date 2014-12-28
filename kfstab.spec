@@ -12,7 +12,7 @@ Patch0:		%{name}-morefilesystems.patch
 Patch1:		%{name}-desktopfile.patch
 URL:		http://kfstab.sourceforge.net/
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kdelibs-devel >= 3.0.0
 BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	kdelibs >= 3.0.0
